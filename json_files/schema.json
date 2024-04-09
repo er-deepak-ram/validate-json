@@ -1,0 +1,335 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "title": "Update Status v1.1.3",
+  "type": "object",
+  "required": [
+    "schema",
+    "brand",
+    "market",
+    "uuid",
+    "sender",
+    "vehicle",
+    "updateEcosys"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "object",
+      "required": [
+        "name",
+        "version"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "enum": ["updatestatus"]
+        },
+        "version": {
+          "enum": ["1.1.3"]
+        }
+      }
+    },
+    "brand": {
+      "enum": ["audi", "vw", "porsche", "seat", "skoda", "vwn", "bentley", "lamborghini", "man", "man-la", "bugatti", "ducati", "faw-vw", "svw", "faw-audi", "svw-audi", "svw-skoda", "anhui-vw", "ford"]
+    },
+    "market": {
+      "enum": ["eu", "cn", "nar"]
+    },
+    "uuid": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "sourceEventsUUIDs": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uuid"
+        }
+      }
+    },
+    "sender": {
+      "type": "object",
+      "required": [
+        "id",
+        "dtime"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "object",
+          "required": [
+            "type",
+            "val"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "enum": ["APP-ID", "ICTO-NR", "LeanIX-ID", "CUSTOM"]
+            },
+            "val": {
+              "type": "string"
+            }
+          }
+        },
+        "dtime": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{7}Z$"
+        }
+      }
+    },
+    "origin": {
+      "type": "object",
+      "required": ["source", "dtime"],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "enum": ["vehicle", "backend"]
+        },
+        "dtime": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{7}Z$"
+        }
+      }
+    },
+    "vehicle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "object",
+          "required": [
+            "type",
+            "val"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "enum": ["vin", "pseudonym", "pseudonym-unified"]
+            },
+            "val": {
+              "type": "string"
+            }
+          }
+        },
+        "time": {
+          "type": "string"
+        }
+      }
+    },
+    "updateEcosys": {
+      "type": "object",
+      "required": [
+        "id",
+        "uc"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "object",
+          "required": [
+            "val"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "val": {
+              "enum": ["e3-1.2-orunext", "e3-2.0-orunext", "e3-1.2-autoedge", "e3-1.1-oru4", "e3-1.1-mod4", "mod3", "oru2/3"]
+            }
+          }
+        },
+        "uc": {
+          "type": "object",
+          "required": [
+            "id",
+            "exec",
+            "vehicleEvent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "object",
+              "required": [
+                "type",
+                "val"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "enum": ["custom", "dlcm-bluelayer", "production"]
+                },
+                "val": {
+                  "enum": ["recall", "bugfix", "upgrade", "testrecall"]
+                }
+              }
+            },
+            "exec": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "object",
+                  "required": [
+                    "val"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "val": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "campaign": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "val": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "recall": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "action": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "id": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "val": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "criterion": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "id": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "val": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "svc42ChangeMeasure": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "val": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "batch": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "val": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "vehicleEvent": {
+              "type": "object",
+              "required": [
+                "raw"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "key": {
+                  "enum": [
+                    "canceled", "created", "documented", "failed", "offboardPrepped", "onboardPrepped", "success", "updated", "uptodate"
+                  ]
+                },
+                "raw": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "release": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "val": {
+                  "type": "string"
+                }
+              }
+            },
+            "version": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "val": {
+                  "type": "string"
+                }
+              }
+            },
+            "notes": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "val": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

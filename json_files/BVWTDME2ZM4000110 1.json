@@ -1,0 +1,712 @@
+[
+    {
+        "schema": {
+            "name": "updatestatus",
+            "version": "1.1.3"
+        },
+        "brand": "vw",
+        "market": "eu",
+        "uuid": "4d6579d4-c3e7-38a1-9246-017e903b2c33",
+        "sender": {
+            "id": {
+                "type": "CUSTOM",
+                "val": "WCDP_ORUEN"
+            },
+            "dtime": "2024-03-20T13:10:08.3722639Z"
+        },
+        "origin": {
+            "source": "backend",
+            "dtime": "2024-03-20T14:37:15.0939400Z"
+        },
+        "vehicle": {
+            "id": {
+                "type": "vin",
+                "val": "BVWTDME2ZM4000110"
+            }
+        },
+        "updateEcosys": {
+            "id": {
+                "val": "e3-1.1-oru4"
+            },
+            "uc": {
+                "id": {
+                    "type": "custom",
+                    "val": "upgrade"
+                },
+                "exec": {
+                    "id": {
+                        "val": "0"
+                    }
+                },
+                "campaign": {
+                    "id": {
+                        "val": "RECALL_OUG6_A3_10001164_485DDF5413A04C2DAA40EF6892982D7F"
+                    },
+                    "recall": {
+                        "action": {
+                            "id": {
+                                "val": "OUG6"
+                            },
+                            "criterion": {
+                                "id": {
+                                    "val": "A3"
+                                }
+                            }
+                        }
+                    },
+                    "svc42ChangeMeasure": {
+                        "id": {
+                            "val": "003"
+                        }
+                    },
+                    "batch": {
+                        "id": {
+                            "val": "485DDF5413A04C2DAA40EF6892982D7F"
+                        }
+                    }
+                },
+                "vehicleEvent": {
+                    "key": "created",
+                    "raw": "VEHICLE_ASSIGNED_TO_CAMPAIGN",
+                    "message": {
+                        "text": "A vehicle is now eligible for an update"
+                    }
+                }
+            },
+            "release": {
+                "id": {
+                    "val": "85H110100A"
+                },
+                "version": {
+                    "val": "1015"
+                },
+                "notes": {
+                    "id": {
+                        "val": "rn-2023-09-06-test"
+                    }
+                }
+            }
+        }
+    },
+	{
+        "schema": {
+            "name": "updatestatus",
+            "version": "1.1.3"
+        },
+        "brand": "vw",
+        "market": "eu",
+        "uuid": "ef4f5ad2-8147-46cb-8389-c2b8c3ef6b10",
+        "sender": {
+            "id": {
+                "type": "CUSTOM",
+                "val": "WCDP_ORUEN"
+            },
+            "dtime": "2024-03-20T13:10:08.3722639Z"
+        },
+        "origin": {
+            "source": "backend",
+            "dtime": "2024-03-20T14:37:15.0939400Z"
+        },
+        "vehicle": {
+            "id": {
+                "type": "vin",
+                "val": "BVWTDME2ZM4000110"
+            }
+        },
+        "updateEcosys": {
+            "id": {
+                "val": "e3-1.1-oru4"
+            },
+            "uc": {
+                "id": {
+                    "type": "custom",
+                    "val": "upgrade"
+                },
+                "exec": {
+                    "id": {
+                        "val": "0"
+                    }
+                },
+                "campaign": {
+                    "id": {
+                        "val": "RECALL_OUG6_A3_10001164_485DDF5413A04C2DAA40EF6892982D7F"
+                    },
+                    "recall": {
+                        "action": {
+                            "id": {
+                                "val": "OUG6"
+                            },
+                            "criterion": {
+                                "id": {
+                                    "val": "A3"
+                                }
+                            }
+                        }
+                    },
+                    "svc42ChangeMeasure": {
+                        "id": {
+                            "val": "003"
+                        }
+                    },
+                    "batch": {
+                        "id": {
+                            "val": "485DDF5413A04C2DAA40EF6892982D7F"
+                        }
+                    }
+                },
+                "vehicleEvent": {
+                    "key": "offboardPrepped",
+                    "raw": "DD_SENT",
+                    "message": {
+                        "text": "Preparation on backend side are finished"
+                    }
+                }
+            },
+            "release": {
+                "id": {
+                    "val": "85H110100A"
+                },
+                "version": {
+                    "val": "1015"
+                },
+                "notes": {
+                    "id": {
+                        "val": "rn-2023-09-06-test"
+                    }
+                }
+            }
+        }
+    },
+	{
+        "schema": {
+            "name": "updatestatus",
+            "version": "1.1.3"
+        },
+        "brand": "vw",
+        "market": "eu",
+        "uuid": "adc0305a-df29-4f08-9d73-800fde2048f0",
+        "sender": {
+            "id": {
+                "type": "CUSTOM",
+                "val": "WCDP_ORUEN"
+            },
+            "dtime": "2024-03-20T13:10:08.3722639Z"
+        },
+        "origin": {
+            "source": "backend",
+            "dtime": "2024-03-20T14:37:15.0939400Z"
+        },
+        "vehicle": {
+            "id": {
+                "type": "vin",
+                "val": "BVWTDME2ZM4000110"
+            }
+        },
+        "updateEcosys": {
+            "id": {
+                "val": "e3-1.1-oru4"
+            },
+            "uc": {
+                "id": {
+                    "type": "custom",
+                    "val": "upgrade"
+                },
+                "exec": {
+                    "id": {
+                        "val": "0"
+                    }
+                },
+                "campaign": {
+                    "id": {
+                        "val": "RECALL_OUG6_A3_10001164_485DDF5413A04C2DAA40EF6892982D7F"
+                    },
+                    "recall": {
+                        "action": {
+                            "id": {
+                                "val": "OUG6"
+                            },
+                            "criterion": {
+                                "id": {
+                                    "val": "A3"
+                                }
+                            }
+                        }
+                    },
+                    "svc42ChangeMeasure": {
+                        "id": {
+                            "val": "003"
+                        }
+                    },
+                    "batch": {
+                        "id": {
+                            "val": "485DDF5413A04C2DAA40EF6892982D7F"
+                        }
+                    }
+                },
+                "vehicleEvent": {
+                    "key": "onboardPrepped",
+                    "raw": "DL_SESSION_COMPLETED",
+                    "message": {
+                        "text": "the vehicle software was updated"
+                    }
+                }
+            },
+            "release": {
+                "id": {
+                    "val": "85H110100A"
+                },
+                "version": {
+                    "val": "1015"
+                },
+                "notes": {
+                    "id": {
+                        "val": "rn-2023-09-06-test"
+                    }
+                }
+            }
+        }
+    },
+	{
+        "schema": {
+            "name": "updatestatus",
+            "version": "1.1.3"
+        },
+        "brand": "vw",
+        "market": "eu",
+        "uuid": "4b794b59-bff8-4013-b656-5d34c33f4ce3",
+        "sender": {
+            "id": {
+                "type": "CUSTOM",
+                "val": "WCDP_ORUEN"
+            },
+            "dtime": "2024-03-20T13:10:08.3722639Z"
+        },
+        "origin": {
+            "source": "backend",
+            "dtime": "2024-03-20T14:37:15.0939400Z"
+        },
+        "vehicle": {
+            "id": {
+                "type": "vin",
+                "val": "BVWTDME2ZM4000110"
+            }
+        },
+        "updateEcosys": {
+            "id": {
+                "val": "e3-1.1-oru4"
+            },
+            "uc": {
+                "id": {
+                    "type": "custom",
+                    "val": "upgrade"
+                },
+                "exec": {
+                    "id": {
+                        "val": "0"
+                    }
+                },
+                "campaign": {
+                    "id": {
+                        "val": "RECALL_OUG6_A3_10001164_485DDF5413A04C2DAA40EF6892982D7F"
+                    },
+                    "recall": {
+                        "action": {
+                            "id": {
+                                "val": "OUG6"
+                            },
+                            "criterion": {
+                                "id": {
+                                    "val": "A3"
+                                }
+                            }
+                        }
+                    },
+                    "svc42ChangeMeasure": {
+                        "id": {
+                            "val": "003"
+                        }
+                    },
+                    "batch": {
+                        "id": {
+                            "val": "485DDF5413A04C2DAA40EF6892982D7F"
+                        }
+                    }
+                },
+                "vehicleEvent": {
+                    "key": "updated",
+                    "raw": "INSTALLATION_COMPLETE_DP",
+                    "message": {
+                        "text": "the documentation is finished"
+                    }
+                }
+            },
+            "release": {
+                "id": {
+                    "val": "85H110100A"
+                },
+                "version": {
+                    "val": "1015"
+                },
+                "notes": {
+                    "id": {
+                        "val": "rn-2023-09-06-test"
+                    }
+                }
+            }
+        }
+    },{
+        "schema": {
+            "name": "updatestatus",
+            "version": "1.1.3"
+        },
+        "brand": "vw",
+        "market": "eu",
+        "uuid": "22517093-ee24-4120-96a5-ecee943892d1",
+        "sender": {
+            "id": {
+                "type": "CUSTOM",
+                "val": "WCDP_ORUEN"
+            },
+            "dtime": "2024-03-20T13:10:08.3722639Z"
+        },
+        "origin": {
+            "source": "backend",
+            "dtime": "2024-03-20T14:37:15.0939400Z"
+        },
+        "vehicle": {
+            "id": {
+                "type": "vin",
+                "val": "BVWTDME2ZM4000110"
+            }
+        },
+        "updateEcosys": {
+            "id": {
+                "val": "e3-1.1-oru4"
+            },
+            "uc": {
+                "id": {
+                    "type": "custom",
+                    "val": "upgrade"
+                },
+                "exec": {
+                    "id": {
+                        "val": "0"
+                    }
+                },
+                "campaign": {
+                    "id": {
+                        "val": "RECALL_OUG6_A3_10001164_485DDF5413A04C2DAA40EF6892982D7F"
+                    },
+                    "recall": {
+                        "action": {
+                            "id": {
+                                "val": "OUG6"
+                            },
+                            "criterion": {
+                                "id": {
+                                    "val": "A3"
+                                }
+                            }
+                        }
+                    },
+                    "svc42ChangeMeasure": {
+                        "id": {
+                            "val": "003"
+                        }
+                    },
+                    "batch": {
+                        "id": {
+                            "val": "485DDF5413A04C2DAA40EF6892982D7F"
+                        }
+                    }
+                },
+                "vehicleEvent": {
+                    "key": "success",
+                    "raw": "SUCCESS_CAMPAIGN_SUCCESSFULLY_DONE",
+                    "message": {
+                        "text": "the whole updated progress is finished successfully"
+                    }
+                }
+            },
+            "release": {
+                "id": {
+                    "val": "85H110100A"
+                },
+                "version": {
+                    "val": "1015"
+                },
+                "notes": {
+                    "id": {
+                        "val": "rn-2023-09-06-test"
+                    }
+                }
+            }
+        }
+    },
+	{
+        "schema": {
+            "name": "updatestatus",
+            "version": "1.1.3"
+        },
+        "brand": "vw",
+        "market": "eu",
+        "uuid": "22517093-ee24-4120-96a5-ecee943991d3",
+        "sender": {
+            "id": {
+                "type": "CUSTOM",
+                "val": "WCDP_ORUEN"
+            },
+            "dtime": "2024-03-20T13:10:08.3722639Z"
+        },
+        "origin": {
+            "source": "backend",
+            "dtime": "2024-03-20T14:37:15.0939400Z"
+        },
+        "vehicle": {
+            "id": {
+                "type": "vin",
+                "val": "BVWTDME2ZM4000110"
+            }
+        },
+        "updateEcosys": {
+            "id": {
+                "val": "e3-1.1-oru4"
+            },
+            "uc": {
+                "id": {
+                    "type": "custom",
+                    "val": "upgrade"
+                },
+                "exec": {
+                    "id": {
+                        "val": "0"
+                    }
+                },
+                "campaign": {
+                    "id": {
+                        "val": "RECALL_OUG6_A3_10001164_485DDF5413A04C2DAA40EF6892982D7F"
+                    },
+                    "recall": {
+                        "action": {
+                            "id": {
+                                "val": "OUG6"
+                            },
+                            "criterion": {
+                                "id": {
+                                    "val": "A3"
+                                }
+                            }
+                        }
+                    },
+                    "svc42ChangeMeasure": {
+                        "id": {
+                            "val": "003"
+                        }
+                    },
+                    "batch": {
+                        "id": {
+                            "val": "485DDF5413A04C2DAA40EF6892982D7F"
+                        }
+                    }
+                },
+                "vehicleEvent": {
+                    "key": "documented",
+                    "raw": "DOCUMENTED_TO_RECALL",
+                    "message": {
+                        "text": "documented"
+                    }
+                }
+            },
+            "release": {
+                "id": {
+                    "val": "85H110100A"
+                },
+                "version": {
+                    "val": "1015"
+                },
+                "notes": {
+                    "id": {
+                        "val": "rn-2023-09-06-test"
+                    }
+                }
+            }
+        }
+    },
+	{
+        "schema": {
+            "name": "updatestatus",
+            "version": "1.1.3"
+        },
+        "brand": "vw",
+        "market": "eu",
+        "uuid": "22517093-ee24-4120-96a5-ecee943992d1",
+        "sender": {
+            "id": {
+                "type": "CUSTOM",
+                "val": "WCDP_ORUEN"
+            },
+            "dtime": "2024-03-20T13:10:08.3722639Z"
+        },
+        "origin": {
+            "source": "backend",
+            "dtime": "2024-03-20T14:37:15.0939400Z"
+        },
+        "vehicle": {
+            "id": {
+                "type": "vin",
+                "val": "BVWTDME2ZM4000110"
+            }
+        },
+        "updateEcosys": {
+            "id": {
+                "val": "e3-1.1-oru4"
+            },
+            "uc": {
+                "id": {
+                    "type": "custom",
+                    "val": "upgrade"
+                },
+                "exec": {
+                    "id": {
+                        "val": "0"
+                    }
+                },
+                "campaign": {
+                    "id": {
+                        "val": "RECALL_OUG6_A3_10001164_485DDF5413A04C2DAA40EF6892982D7F"
+                    },
+                    "recall": {
+                        "action": {
+                            "id": {
+                                "val": "OUG6"
+                            },
+                            "criterion": {
+                                "id": {
+                                    "val": "A3"
+                                }
+                            }
+                        }
+                    },
+                    "svc42ChangeMeasure": {
+                        "id": {
+                            "val": "003"
+                        }
+                    },
+                    "batch": {
+                        "id": {
+                            "val": "485DDF5413A04C2DAA40EF6892982D7F"
+                        }
+                    }
+                },
+                "vehicleEvent": {
+                    "key": "success",
+                    "raw": "SUCCESS_CAMPAIGN_SUCCESSFULLY_DONE",
+                    "message": {
+                        "text": "the whole updated progress is finished successfully"
+                    }
+                }
+            },
+            "release": {
+                "id": {
+                    "val": "85H110100A"
+                },
+                "version": {
+                    "val": "1015"
+                },
+                "notes": {
+                    "id": {
+                        "val": "rn-2023-09-06-test"
+                    }
+                }
+            }
+        }
+    },
+	{
+        "schema": {
+            "name": "updatestatus",
+            "version": "1.1.3"
+        },
+        "brand": "vw",
+        "market": "eu",
+        "uuid": "899fb1fb-3e3d-4026-85a8-8a2d274a10cb",
+        "sender": {
+            "id": {
+                "type": "LeanIX-ID",
+                "val": "c102979"
+            },
+            "dtime": "2024-02-18T00:02:00.0000000Z"
+        },
+        "origin": {
+            "source": "backend",
+            "dtime": "2024-02-18T01:00:01.8102004Z"
+        },
+        "vehicle": {
+            "id": {
+                "type": "vin",
+                "val": "BVWTDME2ZM4000110"
+            }
+        },
+        "updateEcosys": {
+            "id": {
+                "val": "e3-1.1-oru4"
+            },
+            "uc": {
+                "id": {
+                    "type": "custom",
+                    "val": "upgrade"
+                },
+                "exec": {
+                    "id": {
+                        "val": "0"
+                    }
+                },
+                "campaign": {
+                    "id": {
+                        "val": "91CA_04"
+                    },
+                    "recall": {
+                        "action": {
+                            "id": {
+                                "val": "91CA"
+                            },
+                            "criterion": {
+                                "id": {
+                                    "val": "04"
+                                }
+                            }
+                        }
+                    },
+                    "svc42ChangeMeasure": {
+                        "id": {
+                            "val": "003"
+                        }
+                    },
+                    "batch": {
+                        "id": {
+                            "val": "0001"
+                        }
+                    }
+                },
+                "vehicleEvent": {
+                    "raw": "CVI_CALCULATED",
+                    "message": {
+                        "text": "The CVI was calculated"
+                    }
+                }
+            },
+            "release": {
+                "id": {
+                    "val": "85H110100A"
+                },
+                "version": {
+                    "val": "1015"
+                },
+                "notes": {
+                    "id": {
+                        "val": "rn-2023-09-06-test"
+                    }
+                }
+            }
+        }
+    }
+]
